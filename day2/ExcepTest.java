@@ -1,16 +1,13 @@
 import java.io.*;
 
-public class ExcepTest1{
+public class ExcepTest{
     public static void main(String[] args){
+        int a[]={1,2,3};
         try{
-            file=new FileInputStream("hello");
-            x=(byte) file.read();
-        }catch(FileNotFoundException f){
-            f.printStackTrace();
-            return -1;
-        }catch (IOException i){
-            i.printStackTrace();
-            return -1;
+            System.out.println("The three element: "+a[3]);
+        }catch(ArrayIndexOutOfBoundsException e){
+            System.out.println("Exception thrown :"+e);
         }
+        System.out.println("Out of the block");
     }
 }
