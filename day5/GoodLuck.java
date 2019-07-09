@@ -7,6 +7,7 @@ public class GoodLuck {
 		System.out.println("请输入敏德会员号(四位数)：");
 		Scanner input = new Scanner(System.in);
 		int number = input.nextInt();
+		input.close();
 		if (number/1000 == 0) {
 			System.out.println("会员首位不能为零！");
 		}else {

@@ -1,11 +1,15 @@
-public class Add{
-    public static void main(String[] args){
-        int d = 5;
-        long l = 99;
-        double a = d + l;              //自动类型转换
-        System.out.println(a);
+package day5;
+import java.util.Scanner;
 
-        byte b = (byte)(d+l);     //强制类型转换
-        System.out.println(b);
-    }
+public class Add {
+	public static void main(String[] args) {
+		System.out.println("请输入一个数字：");
+		Scanner input = new Scanner(System.in);
+		int number = input.nextInt();
+		input.close();
+		for (int firNo=0,secNo=number;firNo<=secNo;firNo++,secNo--) {
+			System.out.printf("%d + %d = %d\n",firNo, secNo, number);
+		}
+		System.out.println("执行完毕！");
+	}
 }
