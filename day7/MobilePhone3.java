@@ -1,16 +1,19 @@
 package day7;
-
 import java.util.Scanner;
+/**
+ * 冒泡排序
+ * @author root
+ *
+ */
 
-public class Test {
+public class MobilePhone3 {
 	public static void main(String[] args) {
 		System.out.println("请输入四家店的价格：");
 		int[] prices = new int[4];
-		int min=10000;
 		Scanner input = new Scanner(System.in);
 		
 		for(int i=0;i<4;i++) {
-			System.out.println("第"+i+"家店的价格：");
+			System.out.println("第"+(i+1)+"家店的价格：");
 			prices[i] = input.nextInt();
 			}
 		//冒泡排序
