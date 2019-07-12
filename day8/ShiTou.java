@@ -1,4 +1,3 @@
-package day8;
 import java.util.Scanner;
 import java.util.Random;
 /**
@@ -20,6 +19,10 @@ public class ShiTou {
 			System.out.println(i+"."+advers[i]);
 		}
 		int adverNumber = input.nextInt();						//选择对手的编号
+        while(adverNumber != 0 && adverNumber != 1 && adverNumber != 2){
+            System.out.println("请输入正确的选项（0,1,2）：");
+            adverNumber = input.nextInt();
+        }
 		String adversName = advers[adverNumber];				//对手姓名
 		//打印对手选项
 		System.out.println("***************PK*******************");
@@ -37,6 +40,10 @@ public class ShiTou {
 		while(!answer.equalsIgnoreCase("n")) {
 			System.out.println("出什么(0.石头 1.剪刀 2.布)：");
 			int optionsNo = input.nextInt();						//选择的操作编号
+            if(optionsNo!=0 && optionsNo != 1&& optionsNo != 2){
+                System.out.println("请输入正确的选项（0,1,2）：");
+                optionsNo = input.nextInt();
+            }
 			System.out.println("你出的是："+options[optionsNo]);
 			int adversNo = rand.nextInt(options.length);		//随机产生的对手操作编号
 			System.out.println(adversName+"出的是："+options[adversNo]);
