@@ -112,6 +112,33 @@ public class StudentOperator {
 		
 		return isEdit;
 	}
+	
+	/**
+	 * 删除学生信息
+	 * @param id 学生学号
+	 * @return 删除是否成功
+	 */
+	public boolean deleteStudent(int id) {
+		boolean isDel =false;
+		int index=searchStudent(id);
+		if(index>=0) {
+			int i=index;
+			for(;i<studentList.length-1;i++) {
+				if(studentList[i+1]==null) {
+					break;
+				}
+				studentList[i].setName(studentList[i+1].getName());
+				studentList[i].setId(studentList[i+1].getId());
+				studentList[i].setSex(studentList[i+1].getSex());
+				studentList[i].setAge(studentList[i+1].getAge());
+				studentList[i].setScore(studentList[i+1].getScore());
+				studentList[i+1]=null;
+				isDel=true;
+			}
+		}
+		
+		return isDel;
+	}
 
 	public void listMenu() {
 		if (studentList[0] == null) {

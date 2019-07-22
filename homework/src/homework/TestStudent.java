@@ -21,8 +21,8 @@ public class TestStudent {
 		do {
 			// 选择菜单
 			System.out.println("**************学生信息管理系统*************************");
-			System.out.println("1.添加学生信息\n2.显示学生信息\n3.查询学生\n4.修改学生信息\n0.退出");
-			System.out.println("请选择以上操作(0/1/2)");
+			System.out.println("1.添加学生信息\n2.显示学生信息\n3.查询学生\n4.修改学生信息\n5.删除学生信息\n0.退出");
+			System.out.println("请选择以上操作(0/1/2/3/4/5)");
 			System.out.println("**************************************");
 			select = input.nextInt();
 
@@ -40,6 +40,8 @@ public class TestStudent {
 			case 4:
 				updateMenu();
 				break;
+			case 5:deleteStudent();
+			break;
 			case 0:
 				System.out.println("谢谢使用！");
 				break;
@@ -55,7 +57,7 @@ public class TestStudent {
 		stu.setName(input.next());
 		System.out.println("请输入学生学号：");
 		stu.setId(input.nextInt());
-		System.out.println("请输入学生性别：");
+		System.out.println("请输入学生性别(true/false)：");
 		stu.setSex(input.nextBoolean());
 		System.out.println("请输入学生年龄：");
 		stu.setAge(input.nextInt());
@@ -102,6 +104,18 @@ public class TestStudent {
 		}else {
 			System.out.println("没有该学生，修改失败！");
 		}
+	}
+	
+	public void deleteStudent() {
+		System.out.println("请输入要删除学生信息的学号");
+		int id=input.nextInt();
+		boolean isDel=so.deleteStudent(id);
+		if(isDel) {
+			System.out.println("删除成功!");
+		}else {
+			System.out.println("删除失败!");
+		}
+		
 	}
 	
 	public void listMenu() {
