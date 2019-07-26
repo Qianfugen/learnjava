@@ -1,6 +1,9 @@
 package fingerguess;
+
 /**
- * 测试git
+ * 猜拳游戏
+ * @author root
+ *@version 1.0 2019-07-26
  */
 public class FiguresList {
 	private String[] figures = { "刘备", "张飞", "关羽" };
