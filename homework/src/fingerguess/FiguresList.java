@@ -1,5 +1,7 @@
 package fingerguess;
-
+/**
+ * 测试git
+ */
 public class FiguresList {
 	private String[] figures = { "刘备", "张飞", "关羽" };
 
