@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="gb2312"?>
+<Students>
+	<Student Id="1">
+		<Name>1</Name>
+		<Sex>true</Sex>
+		<Score>1.0</Score>
+		<Age>1</Age>
+		<Birthday>1995-12-12</Birthday>
+	</Student>
+	<Student Id="2">
+		<Name>2</Name>
+		<Sex>false</Sex>
+		<Score>2.0</Score>
+		<Age>2</Age>
+		<Birthday>2223-01-05</Birthday>
+	</Student>
+</Students>
