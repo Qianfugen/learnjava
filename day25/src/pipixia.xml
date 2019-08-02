@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><Students>
+	<Student Id="1001">
+		<Name>陈翔</Name>
+		<Sex>true</Sex>
+		<Score>80</Score>
+		<Age>20</Age>
+		<Birthday>1999-06-01</Birthday>
+	</Student>
+	<Student Id="1002">
+		<Name>蔡鑫</Name>
+		<Sex>false</Sex>
+		<Score>100</Score>
+		<Age>24</Age>
+		<Birthday>1996-02-01</Birthday>
+	</Student>
+<Student Id="1003"><Name>钱富根</Name><Sex>true</Sex><Score>99</Score><Age>23</Age></Student></Students>
