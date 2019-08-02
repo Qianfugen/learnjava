@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pets [
+<!ELEMENT pets (dogs,penguins)>
+<!ELEMENT dogs (dog*)>
+<!ELEMENT penguins (penguin+)>
+<!ELEMENT dog (name,health,love,strain?)>
+<!ATTLIST dog id CDATA #REQUIRED>
+<!ELEMENT penguin (name,health,love,sex)>
+<!ATTLIST penguin id CDATA #REQUIRED>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT health (#PCDATA)>
+<!ELEMENT love (#PCDATA)>
+<!ELEMENT strain (#PCDATA)>
+<!ELEMENT sex (#PCDATA)>
+]>
+
+<pets>
+	<dogs>
+		<dog id="1001">
+			<name>汪1</name>
+			<health>100</health>
+			<love>80</love>
+			<strain>拉布拉多</strain>
+		</dog>
+		<dog id="1002">
+			<name>汪2</name>
+			<health>90</health>
+			<love>70</love>
+			<strain>土狗</strain>
+		</dog>
+	</dogs>
+	<penguins>
+		<penguin id="1003">
+			<name>Q仔</name>
+			<health>100</health>
+			<love>80</love>
+			<sex>true</sex>
+		</penguin>
+	</penguins>
+</pets>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pets SYSTEM "pets.dtd">
+
+<pets>
+	<dogs>
+		<dog id="1001">
+			<name>汪狗子</name>
+			<health>100</health>
+			<love>80</love>
+			<strain>拉布拉多</strain>
+		</dog>
+	</dogs>
+	<penguins>
+		<penguin id="1002">
+			<name>Q仔</name>
+			<health>100</health>
+			<love>80</love>
+			<sex>true</sex>
+		</penguin>
+	</penguins>
+</pets>

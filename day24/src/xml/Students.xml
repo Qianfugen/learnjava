@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Students [
+<!ELEMENT Students (Student+)>
+<!ELEMENT Student (Name,Sex,Score,Age,Birthday)>
+<!ATTLIST Student Id CDATA #REQUIRED>
+<!ELEMENT Name (#PCDATA)>
+<!ELEMENT Sex (#PCDATA)>
+<!ELEMENT Score (#PCDATA)>
+]>
+
+<Students>
+	<Student Id="1001">
+		<Name>陈翔</Name>
+		<Sex>true</Sex>
+		<Score>80</Score>
+		<Age>20</Age>
+		<Birthday>1999-06-01</Birthday>
+	</Student>
+	<Student Id="1002">
+		<Name>蔡鑫</Name>
+		<Sex>false</Sex>
+		<Score>100</Score>
+		<Age>24</Age>
+		<Birthday>1996-02-01</Birthday>
+	</Student>
+</Students>
